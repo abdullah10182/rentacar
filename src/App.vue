@@ -13,7 +13,7 @@ export default {
   },
   mounted () {
     this.$store.dispatch('getLocations')
-    //this.$store.dispatch('getVehicles')
+    this.$store.dispatch('getVehicles')
   }
 }
 </script>

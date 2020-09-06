@@ -11,6 +11,8 @@
 
         <availability-badge :available="available"/>
 
+        <router-link :to="'/vehicles/' + slug">more details</router-link>
+
     </div>
 </template>
 
@@ -40,7 +42,11 @@
             available: {
                 type: Number,
                 default: 1
-            }
+            },
+            slug: {
+                type: String,
+                default: ''
+            },
         }
     }
 </script>
