@@ -106,7 +106,8 @@ export default new Vuex.Store({
     makeReservation({ commit, state }, reservationData) {
       const authorization = {
           headers: {
-              Authorization: `Bearer ${this.state.token}`
+              Authorization: `Bearer ${this.state.token}`,
+              'Content-Type': 'multipart/form-data'
           }
       }
 
